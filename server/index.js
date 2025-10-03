@@ -15,7 +15,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 app.use("/api/products", productRouter);
 app.use("/api/product-categories", productCategoryRouter);
 
-app.listen(process.env.PORT, async () => {
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, async () => {
   await connectDB();
-  console.log("Server is running on port 5000");
+  console.log(`Server is running on port ${PORT}`);
 });
