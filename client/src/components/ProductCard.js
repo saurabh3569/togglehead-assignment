@@ -16,7 +16,7 @@ const ProductCard = ({ product }) => {
       {/* Product Image */}
       {product.image && (
         <img
-          src={`http://localhost:5000${product.image}`}
+          src={`${process.env.REACT_APP_API_URL}${product.image}`}
           alt={product.name}
           style={{
             width: "100%",
