@@ -1,5 +1,4 @@
 import React from "react";
-import Navbar from "../components/Navbar";
 import CategoryFilter from "../components/CategoryFilter";
 import ProductList from "../components/ProductList";
 import bgImage from "../assets/product.jpg";
